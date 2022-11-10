@@ -41,7 +41,8 @@ export function ShoppingCart() {
   return (
     <div>
       <h2>Shopping cart</h2>
-      <CartTable items={items} />
+      {/* Display/render only In Stock items */}
+      <CartTable items={items.filter((item) => item.inStock)} />
       <div className="actions">
         <button>Continue checkout</button>
       </div>
@@ -51,6 +52,8 @@ export function ShoppingCart() {
       TODO: A second CartTable for
       out-of-stock items
     */}
+      {/* Display/render only Out of Stock items */}
+      <CartTable items={items.filter((item) => !item.inStock)} />
     </div>
   );
 }
