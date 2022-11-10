@@ -10,8 +10,9 @@
     "react-scripts": "1.0.0"
   },
   "keywords": [],
-  "name": "jsx-button",
-  "description": null,
+  "name": "exercise-iteration",
+  "homepage": ".",
+  "description": "3-exercise-Iteration",
   "version": "0.0.4",
   "scripts": {
     "start": "react-scripts start",
